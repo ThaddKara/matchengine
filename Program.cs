@@ -36,7 +36,7 @@ public class serv
                 for (int i = 0; i < k; i++)
                     Console.Write(Convert.ToChar(b[i]));
 
-                ASCIIEncoding asen = new ASCIIEncoding();
+                UTF8Encoding asen = new UTF8Encoding();
                 s.Send(asen.GetBytes("The string was recieved by the server."));
                 Console.WriteLine("\nSent Acknowledgement");
                 s.Close();
